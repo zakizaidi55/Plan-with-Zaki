@@ -12,7 +12,7 @@ return (
         {
             tours.map((tour)=>{
                
-                return <Card {...tour} removeTour={removeTour}></Card>
+                return <Card {...tour} key={tour.id} removeTour={removeTour}></Card>
             })
         }
        </div>
